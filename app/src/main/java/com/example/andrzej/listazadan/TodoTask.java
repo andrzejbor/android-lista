@@ -1,18 +1,28 @@
 package com.example.andrzej.listazadan;
 
+import com.j256.ormlite.field.DatabaseField;
+import com.j256.ormlite.table.DatabaseTable;
+
 import java.util.Date;
 
 /**
  * Created by Andrzej on 25.11.2016.
  */
 
+@DatabaseTable(tableName = "task")
 public class TodoTask {
 
-    private String title;
+    @DatabaseField(generatedId = true)
     private int id;
+    @DatabaseField(canBeNull = false)
+    private String title;
+    @DatabaseField
     private boolean priority;
+    @DatabaseField
     private String note;
+    @DatabaseField
     private boolean done;
+    @DatabaseField(canBeNull = false)
     private Date created;
 
 
