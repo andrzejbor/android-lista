@@ -6,7 +6,10 @@
         android:id="@+id/stripe"
         android:background="@color/colorAccent"
         android:layout_width="4dp"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"/>
     <CheckBox
         android:id="@+id/done"
         android:layout_centerVertical="true"
