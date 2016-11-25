@@ -22,7 +22,7 @@ public class TodoTask {
     private String note;
     @DatabaseField
     private boolean done;
-    @DatabaseField(canBeNull = false)
+    @DatabaseField(canBeNull = false, format = "yyyy-MM-dd HH:mm:ss")
     private Date created;
 
 

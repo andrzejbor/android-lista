@@ -25,7 +25,7 @@ public class TodoDbOpenHelper extends OrmLiteSqliteOpenHelper {
     @Override
     public void onCreate(SQLiteDatabase database, ConnectionSource connectionSource) {
         try {
-            TableUtils.clearTable(connectionSource, TodoTask.class);
+            TableUtils.createTable(connectionSource, TodoTask.class);
         } catch (SQLException e) {
             e.printStackTrace();
         }
